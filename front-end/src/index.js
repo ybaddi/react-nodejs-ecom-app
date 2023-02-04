@@ -9,7 +9,7 @@ import Contactus from "./pages/contactus/Contactus";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import HeaderMenu from "./components/HeaderComponent/index.jsx";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
