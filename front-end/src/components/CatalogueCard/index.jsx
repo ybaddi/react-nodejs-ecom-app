@@ -1,7 +1,6 @@
-import Nav from 'react-bootstrap/Nav';
 import {Card} from "react-bootstrap";
 
-function HeaderCatalogueMenu({ title, descption,photo, lien }){
+function HeaderCatalogueMenu({ id, title, descption,photo, lien }){
     return (
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={photo} />

@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Home from './pages/home/Home'
 import Catalogue from "./pages/catalogue/Catalogue";
 import Contactus from "./pages/contactus/Contactus";
+import CatalogueEdit from "./pages/catalogueEdit/CatalogueEdit";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import HeaderMenu from "./components/HeaderComponent/index.jsx";
@@ -18,8 +19,8 @@ root.render(
           <HeaderMenu/>
           <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/catalogue" element={<Catalogue />} />
-              <Route path="/catalogue/:catalogueId" element={<Catalogue />} />
+              <Route path="/catalogues" element={<Catalogue />} />
+              <Route path="/catalogues/:catalogueId" element={<CatalogueEdit />} />
               <Route path="/contactus" element={<Contactus />} />
               <Route path="*" element={<ErrorPage />} />
           </Routes>
